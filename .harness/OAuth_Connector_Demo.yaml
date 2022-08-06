@@ -1,0 +1,9 @@
+pipeline:
+    name: OAuth Connector Demo
+    identifier: OAuth_Connector_Demo
+    template:
+        templateRef: account.KD_GitX_Template
+        versionLabel: V1
+    tags: {}
+    projectIdentifier: kapil_digani_test
+    orgIdentifier: aaaorg
