@@ -4,6 +4,22 @@ pipeline:
     template:
         templateRef: account.KD_GitX_Template
         versionLabel: V1
+        templateInputs:
+            stages:
+                - stage:
+                      identifier: Approval
+                      type: Approval
+                      spec:
+                          execution:
+                              steps:
+                                  - step:
+                                        identifier: Echo
+                                        type: ShellScript
+                                        spec:
+                                            source:
+                                                type: Inline
+                                                spec:
+                                                    script: <+input>
     tags: {}
     projectIdentifier: kapil_digani_test
     orgIdentifier: aaaorg
